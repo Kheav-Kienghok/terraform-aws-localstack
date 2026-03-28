@@ -1,5 +1,5 @@
 output "website_url" {
-  value = "http://${aws_s3_bucket.website.bucket}.s3-website.localhost.localstack.cloud:4566"
+  value = aws_s3_bucket_website_configuration.website.website_endpoint
 }
 
 output "ec2_public_ip" {
